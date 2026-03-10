@@ -1,0 +1,27 @@
+@use 'v';
+
+body {
+  background-color: v.$l-background;
+  color: v.$l-foreground;
+
+  @media (prefers-color-scheme: dark) {
+    background-color: v.$d-background;
+    color: v.$d-foreground;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: v.$l-a-default;
+  &:hover {
+    text-decoration: underline;
+    color: v.$l-a-hover;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    color: v.$d-a-default;
+    &:hover {
+      color: v.$d-a-hover;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+---
+import '@styles/global.scss';
+import WingHover from '@components/icons/WingHover.astro';
+---
+
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>API Zone by @wing.osaka</title>
+  </head>
+  <body>
+    <h1>API Zone by @wing.osaka</h1>
+    <a href="/">
+      <WingHover />
+    </a>
+    <p>
+      このゾーンは<a href="https://wing.osaka/">@wing.osaka</a
+      >のAPIルートに割り当てられています．
+    </p>
+  </body>
+</html>
+
+<style lang="scss">
+  body {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100dvh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+</style>
